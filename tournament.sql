@@ -7,16 +7,16 @@
 -- Table with player details
 
 CREATE TABLE players ( 
-			id SERIAL,
+			id SERIAL PRIMARY KEY,
 			name TEXT
                       );
 
 -- Table with match details
 
 CREATE TABLE matches ( 
-			id SERIAL,
-			winner INTEGER,
-			loser INTEGER
+			id SERIAL PRIMARY KEY, 
+			winner INTEGER REFERENCES players (id),
+			loser INTEGER REFERENCES players (id),
                       );
 
 -- View counting wins by player
