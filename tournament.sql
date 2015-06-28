@@ -22,7 +22,6 @@ CREATE TABLE matches (
 -- View counting wins by player
 
 CREATE VIEW wins AS
-			
 			SELECT
 				winner,
 				count(winner)
@@ -35,7 +34,6 @@ CREATE VIEW wins AS
 -- View counting loses by player
 
 CREATE VIEW loses AS
-			
 			SELECT
 				loser,
 				count(loser)
@@ -48,7 +46,6 @@ CREATE VIEW loses AS
 -- View counting matches by player
 
 CREATE VIEW matchesByPlayer AS
-			
 			SELECT
 				p.id,
 				p.name,
@@ -66,7 +63,6 @@ CREATE VIEW matchesByPlayer AS
 -- View consolidating player details, wins and matches by player
 
 CREATE VIEW playerStanding AS
-			
 			SELECT
 				m.id,
 				m.name,
