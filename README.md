@@ -8,7 +8,7 @@
 
 ### Instructions to run the application
 * Type *psql* to get into Postgres database
-* create tournament (*drop database if exists tournament;*, *create database tournament;*), 
+* create tournament (*drop database if exists tournament;* and *create database tournament;*), 
 * connect to tournament database (*\c tournament*), 
 * import database schema including tables and view (*\i tournament.sql*),
 * exit psql and run *tournament_test.py* (*python tournament_test.py*) to check compliance with all tests
