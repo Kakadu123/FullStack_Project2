@@ -29,7 +29,7 @@ def deletePlayers():
     """Remove all the player records from the database."""
     DB, c = connect()
     # all players deleted
-    query = "TRUNCATE players"
+    query = "TRUNCATE players CASCADE"
     c.execute(query)
     DB.commit()
     DB.close()
